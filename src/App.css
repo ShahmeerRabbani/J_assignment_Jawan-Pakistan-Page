@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Poppins, sans-serif;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+}
+
+.nav{
+    height: 100px;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav>ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.content{
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: inline-flex;
+}
+
+.intro{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.Intro_img{
+    height: 100%;
+    width: 40%;
+}
+
+.mission{
+    height: 100vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: inline-flex;
+}
+
+.mission_img{
+    height: 100%;
+    width: 50%;
+}
+
+.mission_intro{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* padding: 100px 0; */
+}
+
+.founder_img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-image: url('../src/assets/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.course{
+    height: 200vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards{
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course_card{
+    height: 350px;
+    width: 320px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.course_card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1);
+}
+
+.card_img{
+    height: 80%;
+    width: 100%;
+}
+
+.Gallery{
+    height: 100vh;
+    width: 100%;
+}
