@@ -10,6 +10,8 @@ import BlogImg from './assets/blog-image-Soical-media-v-digital.png';
 import blockChainImg from './assets/blockchain.jpg';
 import { Container, Typography } from "@mui/material";
 import Card from "./card/Card";
+import Gallery from "./Gallery/Gallery";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaLinkedinIn } from "react-icons/fa6";
 
 const App = () => {
   return (
@@ -160,7 +162,67 @@ const App = () => {
           </div>
         </div>
 
-        <div className="Gallery"></div>
+        <div className="Gallery">
+          <Container maxWidth='xl'>
+
+          <Typography
+          mt={10}
+          mb={10}
+          variant="h3"
+          style={{ fontWeight: 700, color: "#006838" }}
+          >Glimpses of sessions conducted by Jawan Pakistan</Typography>
+          <Gallery/>
+          </Container>
+        </div>
+        <hr />
+        <div className="Form">
+          <div className="Form_box">
+            <Typography variant="h5" style={{fontWeight: 700}}>Contact</Typography>
+            <label htmlFor="">Name <span>*</span></label>
+            <input type="text" name="" id="" />
+            <label htmlFor="">Email <span>*</span></label>
+            <input type="email" name="" id="" placeholder="example@gmail.com"/>
+            <label htmlFor="">Phone Number <span>*</span></label>
+            <input type="number" name="" id="" placeholder="03172980810"/>
+            <label htmlFor="">Message <span>*</span></label>
+            <textarea name="" id="" cols="30" rows="8"></textarea>
+            <button>Submit</button>
+          </div>
+        </div>
+        <div className="footer">
+        <span style={{ height: "100%", width: "250px", display: "flex" }}>
+                <img
+                  src={LogoImg}
+                  alt=""
+                  style={{
+                    objectFit: "contain",
+                    height: "100%",
+                    width: "100%",
+                  }}
+                />
+              </span> 
+          <ul>
+            <li>Company</li>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Trainings</li>
+            <li>Contact us</li>
+          </ul>
+          <ul>
+            <li>Contact Details</li>
+            <li>Muhammad Ali Mughal</li>
+            <li>+923005292675</li>
+            <li>jawantechpk@gmail.com</li>
+          </ul>
+        </div>
+        <div className="copyWrite">
+          <span style={{fontSize: 14}}>© 2022 JawanPakistan</span>
+          <span style={{display: 'flex', gap: 10, fontSize: 20, color: '#99A3B3'}}>
+            <FaFacebookF/>
+            <FaInstagram/>
+            <FaLinkedinIn/>
+          </span>
+        </div>
       </div>
     </React.Fragment>
   );
